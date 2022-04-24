@@ -1,0 +1,65 @@
+def Menu():
+    """Funcion que Muestra el Menu"""
+    print printf("Calculo de Areas")
+    printf("\n\t7-SALIR");
+Menu
+1) Calculo area de circulo 
+2) Calculo area de cuadrado
+3) Calculo del area de Rectángulo
+4) Rombo
+5) Romboide
+6) Trapecio
+7) Polígono regular
+8) Salir """
+
+Calculadora()
+   void calculoareas(){
+int a,b,h,B;        //Variables para almacenar datos.lados, Altura, Base mayor, Base menor
+char opcion;
+                      printf("\n::::Calculo de Areas::::");
+                      printf("\na.el Area de un rectangulo");
+                      printf("\nb.Area de un triangulo rectangulo");
+                      printf("\nc.Area de un trapecio");
+                      printf("\nINGRESE OPCION [a,b,c] : ");
+                      opcion=getch();
+                      switch(opcion) {
+                    case 'a':
+                            printf("\n\n------------------------------------");
+                             printf("\nCalculo de Area Retangulo");
+                             printf("\n------------------------------------");
+                             printf("\nIngrese lado a:\t");
+                             scanf("%d",&a);
+                             printf("\nIngrese lado b:\t");
+                             scanf("%d",&b);
+                             printf("\nEl area total es:%d m^2\n",a*b);
+                             //axb
+                            break;
+
+                    case 'b':
+                             printf("\n\n------------------------------------");
+                             printf("\nCalculo de Area Triangulo Retangulo");
+                             printf("\n------------------------------------");
+                             printf("\nIngrese base:\t");
+                             scanf("%d",&b);
+                             printf("\nIngrese altura:\t");
+                             scanf("%d",&h);
+                             printf("\nEl area total es:%d m^2",(h*b/2));
+                            break;
+
+                    case 'c':
+                            printf("\n\n------------------------------------");
+                             printf("\nCalculo de Area Trapecio");
+                             printf("\n------------------------------------");
+                             printf("\nIngrese base Mayor:\t");
+                             scanf("%d",&B);
+                             printf("\nIngrese base Menor:\t");
+                             scanf("%d",&b);
+                             printf("\nIngrese Altura:\t");
+                             scanf("%d",&h);
+                             printf("\nEl area total es:%d m^2",(B+b/2)*h);
+                            break;
+                    default:
+                        printf("Opcion Invalida, Retornando");
+                        break;
+                      }//Fin Switch
+}   //Fin Main
